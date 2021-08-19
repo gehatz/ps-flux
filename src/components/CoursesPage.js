@@ -9,10 +9,6 @@ class CoursesPage extends React.Component{
     componentDidMount(){
         getCourses().then((courses) => this.setState({courses: courses}));
     }
-
-    renderRow( course ) {
-        
-    }
     
     render() {
         return ( <><h2>Courses</h2>
@@ -35,7 +31,7 @@ class CoursesPage extends React.Component{
                    )
                })}
            </tbody>
-           </table>     
+        </table>     
         </>
         );           
     }
